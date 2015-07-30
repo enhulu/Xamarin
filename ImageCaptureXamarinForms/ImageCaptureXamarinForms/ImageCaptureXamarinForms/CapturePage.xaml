@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImageCaptureXamarinForms.CapturePage">
+  <Grid Padding ="5,10,5,10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Image
+      Grid.Row="0"
+      x:Name="capturedImage"></Image>
+    <Grid Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Button x:Name="captureButton" Grid.Column="0" Text="Capture" Clicked="OnCaptureClicked"></Button>
+    </Grid>
+  </Grid>
+</ContentPage>
